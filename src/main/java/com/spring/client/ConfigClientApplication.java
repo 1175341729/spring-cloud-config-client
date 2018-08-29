@@ -2,11 +2,13 @@ package com.spring.client;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.cloud.context.config.annotation.RefreshScope;
 
 @SpringBootApplication
-public class ClientApplication {
+@RefreshScope
+public class ConfigClientApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(ClientApplication.class, args);
+		SpringApplication.run(ConfigClientApplication.class, args);
 	}
 }
